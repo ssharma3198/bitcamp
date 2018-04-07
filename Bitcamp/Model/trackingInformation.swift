@@ -15,10 +15,7 @@ class Track {
     private static let manager = CLLocationManager()
     private var radius = CLCircularRegion()
     
-    func initUser(u: User) {
-        radius =  u.radius
-    }
-    
+   
     static func locationManager() {
         manager.requestAlwaysAuthorization()
         manager.requestWhenInUseAuthorization()
@@ -29,12 +26,13 @@ class Track {
             manager.pausesLocationUpdatesAutomatically = false
             manager.startUpdatingLocation()
         }
-        
-        
     }
     
-    static func notify() {
+    static func notify(User u: User) {
         let loc = manager.location?.coordinate
-        
+        let area = u.area
+        if area.contains(loc!) {
+            // Send notification
+        }
     }
 }

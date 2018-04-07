@@ -14,10 +14,7 @@ import CoreLocation
 class Track {
     private static let manager = CLLocationManager()
     private var radius = CLCircularRegion()
-    
-    func initUser(u: User) {
-        radius =  u.radius
-    }
+  
     
     static func locationManager() {
         manager.requestAlwaysAuthorization()

@@ -1,0 +1,6 @@
+framework module Pods_BitcampTests {
+  umbrella header "Pods-BitcampTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

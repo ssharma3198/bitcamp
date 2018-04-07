@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D48BFE92078A842005F3BE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48BFE82078A842005F3BE4 /* AppDelegate.swift */; };
+		9D48BFEB2078A842005F3BE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48BFEA2078A842005F3BE4 /* ViewController.swift */; };
+		9D48BFEE2078A842005F3BE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D48BFEC2078A842005F3BE4 /* Main.storyboard */; };
+		9D48BFF12078A842005F3BE4 /* Bitcamp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D48BFEF2078A842005F3BE4 /* Bitcamp.xcdatamodeld */; };
+		9D48BFF32078A842005F3BE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D48BFF22078A842005F3BE4 /* Assets.xcassets */; };
+		9D48BFF62078A842005F3BE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D48BFF42078A842005F3BE4 /* LaunchScreen.storyboard */; };
+		9D48C0012078A842005F3BE4 /* BitcampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48C0002078A842005F3BE4 /* BitcampTests.swift */; };
+		9D48C00C2078A842005F3BE4 /* BitcampUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48C00B2078A842005F3BE4 /* BitcampUITests.swift */; };
+		9D48C01E2078AC6E005F3BE4 /* trackingInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48C01D2078AC6E005F3BE4 /* trackingInformation.swift */; };
+		9D48C01F20790F2F005F3BE4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D48C02120790F2F005F3BE4 /* Alamofire.framework */; };
+		9D48C02020790F2F005F3BE4 /* SwiftKeychainWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D48C02220790F2F005F3BE4 /* SwiftKeychainWrapper.framework */; };
+		9D48C026207919AA005F3BE4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D48C025207919AA005F3BE4 /* Info.plist */; };
+		9D48C02820791A74005F3BE4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D48C02720791A74005F3BE4 /* Default-568h@2x.png */; };
+		9D48C02B20791E79005F3BE4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48C02A20791E79005F3BE4 /* User.swift */; };
+		9D48C02D20792373005F3BE4 /* Merchant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48C02C20792373005F3BE4 /* Merchant.swift */; };
+		9EF5F7D53F66249046D9BD8B /* Pods_Bitcamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501084368D645E3BFAB46E18 /* Pods_Bitcamp.framework */; };
+		BD74FB82FF6F5AB44CFCDA46 /* Pods_BitcampTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCE2B2BCD9A52BDCDCB1C5E /* Pods_BitcampTests.framework */; };
+		C256C4E688B384143A0C765B /* Pods_BitcampUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A06BFB412E912F06AAB162 /* Pods_BitcampUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		9D48C02920791D1D005F3BE4 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = text.plist;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyPlist\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		9D48BFFD2078A842005F3BE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D48BFDD2078A842005F3BE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D48BFE42078A842005F3BE4;
+			remoteInfo = Bitcamp;
+		};
+		9D48C0082078A842005F3BE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D48BFDD2078A842005F3BE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D48BFE42078A842005F3BE4;
+			remoteInfo = Bitcamp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		43745F16E62AF2CDB3D8C484 /* Pods-BitcampUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcampUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitcampUITests/Pods-BitcampUITests.release.xcconfig"; sourceTree = "<group>"; };
+		48AC6670AA2A425479EAD030 /* Pods-BitcampTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcampTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitcampTests/Pods-BitcampTests.release.xcconfig"; sourceTree = "<group>"; };
+		48C19E25445956336C0F7181 /* Pods-BitcampUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcampUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitcampUITests/Pods-BitcampUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		501084368D645E3BFAB46E18 /* Pods_Bitcamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bitcamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		516994A2A55600811BF9610B /* Pods-Bitcamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitcamp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bitcamp/Pods-Bitcamp.debug.xcconfig"; sourceTree = "<group>"; };
+		55A06BFB412E912F06AAB162 /* Pods_BitcampUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcampUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8692AB7CD0D2E2A7C655DB48 /* Pods-BitcampTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcampTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitcampTests/Pods-BitcampTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D48BFE52078A842005F3BE4 /* Bitcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bitcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D48BFE82078A842005F3BE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D48BFEA2078A842005F3BE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D48BFED2078A842005F3BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D48BFF02078A842005F3BE4 /* Bitcamp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bitcamp.xcdatamodel; sourceTree = "<group>"; };
+		9D48BFF22078A842005F3BE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D48BFF52078A842005F3BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D48BFFC2078A842005F3BE4 /* BitcampTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcampTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D48C0002078A842005F3BE4 /* BitcampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcampTests.swift; sourceTree = "<group>"; };
+		9D48C0022078A842005F3BE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D48C0072078A842005F3BE4 /* BitcampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D48C00B2078A842005F3BE4 /* BitcampUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcampUITests.swift; sourceTree = "<group>"; };
+		9D48C00D2078A842005F3BE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D48C01D2078AC6E005F3BE4 /* trackingInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackingInformation.swift; sourceTree = "<group>"; };
+		9D48C02120790F2F005F3BE4 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D48C02220790F2F005F3BE4 /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftKeychainWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D48C025207919AA005F3BE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D48C02720791A74005F3BE4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9D48C02A20791E79005F3BE4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9D48C02C20792373005F3BE4 /* Merchant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merchant.swift; sourceTree = "<group>"; };
+		9DFC2C49657F2A84D344F7E3 /* Pods-Bitcamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitcamp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bitcamp/Pods-Bitcamp.release.xcconfig"; sourceTree = "<group>"; };
+		DCCE2B2BCD9A52BDCDCB1C5E /* Pods_BitcampTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcampTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D48BFE22078A842005F3BE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D48C01F20790F2F005F3BE4 /* Alamofire.framework in Frameworks */,
+				9D48C02020790F2F005F3BE4 /* SwiftKeychainWrapper.framework in Frameworks */,
+				9EF5F7D53F66249046D9BD8B /* Pods_Bitcamp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D48BFF92078A842005F3BE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD74FB82FF6F5AB44CFCDA46 /* Pods_BitcampTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D48C0042078A842005F3BE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C256C4E688B384143A0C765B /* Pods_BitcampUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78D7937147B33D5175ED3F3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D48C02120790F2F005F3BE4 /* Alamofire.framework */,
+				9D48C02220790F2F005F3BE4 /* SwiftKeychainWrapper.framework */,
+				501084368D645E3BFAB46E18 /* Pods_Bitcamp.framework */,
+				DCCE2B2BCD9A52BDCDCB1C5E /* Pods_BitcampTests.framework */,
+				55A06BFB412E912F06AAB162 /* Pods_BitcampUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D48BFDC2078A842005F3BE4 = {
+			isa = PBXGroup;
+			children = (
+				9D48C02720791A74005F3BE4 /* Default-568h@2x.png */,
+				9D48BFE72078A842005F3BE4 /* Bitcamp */,
+				9D48BFFF2078A842005F3BE4 /* BitcampTests */,
+				9D48C00A2078A842005F3BE4 /* BitcampUITests */,
+				9D48BFE62078A842005F3BE4 /* Products */,
+				CBBBCDC55C63EF91F264EF01 /* Pods */,
+				78D7937147B33D5175ED3F3A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9D48BFE62078A842005F3BE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D48BFE52078A842005F3BE4 /* Bitcamp.app */,
+				9D48BFFC2078A842005F3BE4 /* BitcampTests.xctest */,
+				9D48C0072078A842005F3BE4 /* BitcampUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D48BFE72078A842005F3BE4 /* Bitcamp */ = {
+			isa = PBXGroup;
+			children = (
+				9D48C01C2078AC23005F3BE4 /* Controller */,
+				9D48C01B2078AC1D005F3BE4 /* View */,
+				9D48C01A2078AC17005F3BE4 /* Model */,
+				9D48C0192078AC0C005F3BE4 /* Supporting Files */,
+			);
+			path = Bitcamp;
+			sourceTree = "<group>";
+		};
+		9D48BFFF2078A842005F3BE4 /* BitcampTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D48C0002078A842005F3BE4 /* BitcampTests.swift */,
+				9D48C0022078A842005F3BE4 /* Info.plist */,
+			);
+			path = BitcampTests;
+			sourceTree = "<group>";
+		};
+		9D48C00A2078A842005F3BE4 /* BitcampUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9D48C00B2078A842005F3BE4 /* BitcampUITests.swift */,
+				9D48C00D2078A842005F3BE4 /* Info.plist */,
+			);
+			path = BitcampUITests;
+			sourceTree = "<group>";
+		};
+		9D48C0192078AC0C005F3BE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D48C025207919AA005F3BE4 /* Info.plist */,
+				9D48BFE82078A842005F3BE4 /* AppDelegate.swift */,
+				9D48BFF22078A842005F3BE4 /* Assets.xcassets */,
+				9D48BFF42078A842005F3BE4 /* LaunchScreen.storyboard */,
+				9D48BFEF2078A842005F3BE4 /* Bitcamp.xcdatamodeld */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9D48C01A2078AC17005F3BE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D48C01D2078AC6E005F3BE4 /* trackingInformation.swift */,
+				9D48C02A20791E79005F3BE4 /* User.swift */,
+				9D48C02C20792373005F3BE4 /* Merchant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D48C01B2078AC1D005F3BE4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D48BFEC2078A842005F3BE4 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D48C01C2078AC23005F3BE4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D48BFEA2078A842005F3BE4 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CBBBCDC55C63EF91F264EF01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				516994A2A55600811BF9610B /* Pods-Bitcamp.debug.xcconfig */,
+				9DFC2C49657F2A84D344F7E3 /* Pods-Bitcamp.release.xcconfig */,
+				8692AB7CD0D2E2A7C655DB48 /* Pods-BitcampTests.debug.xcconfig */,
+				48AC6670AA2A425479EAD030 /* Pods-BitcampTests.release.xcconfig */,
+				48C19E25445956336C0F7181 /* Pods-BitcampUITests.debug.xcconfig */,
+				43745F16E62AF2CDB3D8C484 /* Pods-BitcampUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D48BFE42078A842005F3BE4 /* Bitcamp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D48C0102078A842005F3BE4 /* Build configuration list for PBXNativeTarget "Bitcamp" */;
+			buildPhases = (
+				3C68240C15E9143CD6870377 /* [CP] Check Pods Manifest.lock */,
+				9D48BFE12078A842005F3BE4 /* Sources */,
+				9D48BFE22078A842005F3BE4 /* Frameworks */,
+				9D48BFE32078A842005F3BE4 /* Resources */,
+				F6F6BB0351A370D418CC148B /* [CP] Embed Pods Frameworks */,
+				AD946DBD57FC2BCA9E617206 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+				9D48C02920791D1D005F3BE4 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = Bitcamp;
+			productName = Bitcamp;
+			productReference = 9D48BFE52078A842005F3BE4 /* Bitcamp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D48BFFB2078A842005F3BE4 /* BitcampTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D48C0132078A842005F3BE4 /* Build configuration list for PBXNativeTarget "BitcampTests" */;
+			buildPhases = (
+				FEC3EB1401129E6EC2247027 /* [CP] Check Pods Manifest.lock */,
+				9D48BFF82078A842005F3BE4 /* Sources */,
+				9D48BFF92078A842005F3BE4 /* Frameworks */,
+				9D48BFFA2078A842005F3BE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D48BFFE2078A842005F3BE4 /* PBXTargetDependency */,
+			);
+			name = BitcampTests;
+			productName = BitcampTests;
+			productReference = 9D48BFFC2078A842005F3BE4 /* BitcampTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9D48C0062078A842005F3BE4 /* BitcampUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D48C0162078A842005F3BE4 /* Build configuration list for PBXNativeTarget "BitcampUITests" */;
+			buildPhases = (
+				EF249B618A161D82C18862AC /* [CP] Check Pods Manifest.lock */,
+				9D48C0032078A842005F3BE4 /* Sources */,
+				9D48C0042078A842005F3BE4 /* Frameworks */,
+				9D48C0052078A842005F3BE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D48C0092078A842005F3BE4 /* PBXTargetDependency */,
+			);
+			name = BitcampUITests;
+			productName = BitcampUITests;
+			productReference = 9D48C0072078A842005F3BE4 /* BitcampUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D48BFDD2078A842005F3BE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Shruti Sharma";
+				TargetAttributes = {
+					9D48BFE42078A842005F3BE4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					9D48BFFB2078A842005F3BE4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9D48BFE42078A842005F3BE4;
+					};
+					9D48C0062078A842005F3BE4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9D48BFE42078A842005F3BE4;
+					};
+				};
+			};
+			buildConfigurationList = 9D48BFE02078A842005F3BE4 /* Build configuration list for PBXProject "Bitcamp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D48BFDC2078A842005F3BE4;
+			productRefGroup = 9D48BFE62078A842005F3BE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D48BFE42078A842005F3BE4 /* Bitcamp */,
+				9D48BFFB2078A842005F3BE4 /* BitcampTests */,
+				9D48C0062078A842005F3BE4 /* BitcampUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D48BFE32078A842005F3BE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D48C026207919AA005F3BE4 /* Info.plist in Resources */,
+				9D48BFF62078A842005F3BE4 /* LaunchScreen.storyboard in Resources */,
+				9D48BFF32078A842005F3BE4 /* Assets.xcassets in Resources */,
+				9D48C02820791A74005F3BE4 /* Default-568h@2x.png in Resources */,
+				9D48BFEE2078A842005F3BE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D48BFFA2078A842005F3BE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D48C0052078A842005F3BE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C68240C15E9143CD6870377 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bitcamp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD946DBD57FC2BCA9E617206 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Bitcamp/Pods-Bitcamp-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bitcamp/Pods-Bitcamp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF249B618A161D82C18862AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitcampUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6F6BB0351A370D418CC148B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Bitcamp/Pods-Bitcamp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bitcamp/Pods-Bitcamp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEC3EB1401129E6EC2247027 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitcampTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D48BFE12078A842005F3BE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D48BFEB2078A842005F3BE4 /* ViewController.swift in Sources */,
+				9D48C01E2078AC6E005F3BE4 /* trackingInformation.swift in Sources */,
+				9D48BFF12078A842005F3BE4 /* Bitcamp.xcdatamodeld in Sources */,
+				9D48C02B20791E79005F3BE4 /* User.swift in Sources */,
+				9D48BFE92078A842005F3BE4 /* AppDelegate.swift in Sources */,
+				9D48C02D20792373005F3BE4 /* Merchant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D48BFF82078A842005F3BE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D48C0012078A842005F3BE4 /* BitcampTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D48C0032078A842005F3BE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D48C00C2078A842005F3BE4 /* BitcampUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D48BFFE2078A842005F3BE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D48BFE42078A842005F3BE4 /* Bitcamp */;
+			targetProxy = 9D48BFFD2078A842005F3BE4 /* PBXContainerItemProxy */;
+		};
+		9D48C0092078A842005F3BE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D48BFE42078A842005F3BE4 /* Bitcamp */;
+			targetProxy = 9D48C0082078A842005F3BE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9D48BFEC2078A842005F3BE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D48BFED2078A842005F3BE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D48BFF42078A842005F3BE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D48BFF52078A842005F3BE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D48C00E2078A842005F3BE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D48C00F2078A842005F3BE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D48C0112078A842005F3BE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 516994A2A55600811BF9610B /* Pods-Bitcamp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V892UB6B4U;
+				INFOPLIST_FILE = "$(SRCROOT)/Bitcamp/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.umd.ssharma1.Bitcamp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D48C0122078A842005F3BE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DFC2C49657F2A84D344F7E3 /* Pods-Bitcamp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V892UB6B4U;
+				INFOPLIST_FILE = "$(SRCROOT)/Bitcamp/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.umd.ssharma1.Bitcamp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9D48C0142078A842005F3BE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8692AB7CD0D2E2A7C655DB48 /* Pods-BitcampTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V892UB6B4U;
+				INFOPLIST_FILE = BitcampTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.umd.ssharma1.BitcampTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bitcamp.app/Bitcamp";
+			};
+			name = Debug;
+		};
+		9D48C0152078A842005F3BE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48AC6670AA2A425479EAD030 /* Pods-BitcampTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V892UB6B4U;
+				INFOPLIST_FILE = BitcampTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.umd.ssharma1.BitcampTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bitcamp.app/Bitcamp";
+			};
+			name = Release;
+		};
+		9D48C0172078A842005F3BE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48C19E25445956336C0F7181 /* Pods-BitcampUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V892UB6B4U;
+				INFOPLIST_FILE = BitcampUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.umd.ssharma1.BitcampUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bitcamp;
+			};
+			name = Debug;
+		};
+		9D48C0182078A842005F3BE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43745F16E62AF2CDB3D8C484 /* Pods-BitcampUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V892UB6B4U;
+				INFOPLIST_FILE = BitcampUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.umd.ssharma1.BitcampUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bitcamp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D48BFE02078A842005F3BE4 /* Build configuration list for PBXProject "Bitcamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D48C00E2078A842005F3BE4 /* Debug */,
+				9D48C00F2078A842005F3BE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D48C0102078A842005F3BE4 /* Build configuration list for PBXNativeTarget "Bitcamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D48C0112078A842005F3BE4 /* Debug */,
+				9D48C0122078A842005F3BE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D48C0132078A842005F3BE4 /* Build configuration list for PBXNativeTarget "BitcampTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D48C0142078A842005F3BE4 /* Debug */,
+				9D48C0152078A842005F3BE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D48C0162078A842005F3BE4 /* Build configuration list for PBXNativeTarget "BitcampUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D48C0172078A842005F3BE4 /* Debug */,
+				9D48C0182078A842005F3BE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9D48BFEF2078A842005F3BE4 /* Bitcamp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9D48BFF02078A842005F3BE4 /* Bitcamp.xcdatamodel */,
+			);
+			currentVersion = 9D48BFF02078A842005F3BE4 /* Bitcamp.xcdatamodel */;
+			path = Bitcamp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9D48BFDD2078A842005F3BE4 /* Project object */;
+}

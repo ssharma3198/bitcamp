@@ -9,35 +9,38 @@
 import Foundation
 import CoreLocation
 
-/*
 class User {
     var name: String!
-    var locations: Dictionary<String, Int>! = nil
+    var locations: Dictionary<String, Int>! // id -> number of visits
     var mostFrequentMerchant: Merchant!
-    var radius: CLCircularRegion
+    var area: CLCircularRegion
     
-    func User() {
-        name = ""
-        locations = Dictionary<String, Int>()
-        mostFrequentMerchant = Merchant()
-        radius = CLCircularRegion.init(center: mostFrequentMerchant.geocode_coordinate, )
-    }
-    
-    static func frequentLocations() -> String {
+    init(Name n: String!, locations loc: Dictionary<String, Int>!) {
+        name = n
+        locations = loc
         var maxVisits = 0
-        var location = ""
+        var mostFrequentLoc = ""
         for (key, value) in locations {
             if value > maxVisits {
-                location = key
+                mostFrequentLoc = key
                 maxVisits = value
             }
         }
-        return location
+        mostFrequentMerchant = Merchant.allMerchants[mostFrequentLoc]
+        area = CLCircularRegion.init(center: mostFrequentMerchant.geocode_coordinate, radius: 1.0, identifier: mostFrequentMerchant._id)
     }
     
-    static func nearMechant() {
-        
-    
+    func frequentLocations() -> String {
+        var maxVisits = 0
+        var locationId = ""
+        for (key, value) in locations {
+            if value > maxVisits {
+                locationId = key
+                maxVisits = value
+            }
+        }
+        return locationId
     }
+
 }
-*/
+

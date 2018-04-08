@@ -26,6 +26,8 @@
 		9EF5F7D53F66249046D9BD8B /* Pods_Bitcamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501084368D645E3BFAB46E18 /* Pods_Bitcamp.framework */; };
 		BD74FB82FF6F5AB44CFCDA46 /* Pods_BitcampTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCE2B2BCD9A52BDCDCB1C5E /* Pods_BitcampTests.framework */; };
 		C256C4E688B384143A0C765B /* Pods_BitcampUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A06BFB412E912F06AAB162 /* Pods_BitcampUITests.framework */; };
+		EC1015F8207967D1003BAE1C /* angry_bud.png in Resources */ = {isa = PBXBuildFile; fileRef = EC1015F7207967D0003BAE1C /* angry_bud.png */; };
+		EC1015FA207967D9003BAE1C /* happy_bud.png in Resources */ = {isa = PBXBuildFile; fileRef = EC1015F9207967D9003BAE1C /* happy_bud.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -88,6 +90,8 @@
 		9D48C06C20796810005F3BE4 /* CapitalOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalOne.swift; sourceTree = "<group>"; };
 		9DFC2C49657F2A84D344F7E3 /* Pods-Bitcamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitcamp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bitcamp/Pods-Bitcamp.release.xcconfig"; sourceTree = "<group>"; };
 		DCCE2B2BCD9A52BDCDCB1C5E /* Pods_BitcampTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcampTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC1015F7207967D0003BAE1C /* angry_bud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = angry_bud.png; sourceTree = "<group>"; };
+		EC1015F9207967D9003BAE1C /* happy_bud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy_bud.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,7 @@
 		9D48BFE72078A842005F3BE4 /* Bitcamp */ = {
 			isa = PBXGroup;
 			children = (
+				EC1015F62079662C003BAE1C /* Images */,
 				9D48C01C2078AC23005F3BE4 /* Controller */,
 				9D48C01B2078AC1D005F3BE4 /* View */,
 				9D48C01A2078AC17005F3BE4 /* Model */,
@@ -234,6 +239,16 @@
 				43745F16E62AF2CDB3D8C484 /* Pods-BitcampUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC1015F62079662C003BAE1C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EC1015F9207967D9003BAE1C /* happy_bud.png */,
+				EC1015F7207967D0003BAE1C /* angry_bud.png */,
+			);
+			name = Images;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,9 +369,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC1015F8207967D1003BAE1C /* angry_bud.png in Resources */,
 				9D48C026207919AA005F3BE4 /* Info.plist in Resources */,
 				9D48BFF62078A842005F3BE4 /* LaunchScreen.storyboard in Resources */,
 				9D48BFF32078A842005F3BE4 /* Assets.xcassets in Resources */,
+				EC1015FA207967D9003BAE1C /* happy_bud.png in Resources */,
 				9D48C02820791A74005F3BE4 /* Default-568h@2x.png in Resources */,
 				9D48BFEE2078A842005F3BE4 /* Main.storyboard in Resources */,
 			);

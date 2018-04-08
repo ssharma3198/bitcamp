@@ -13,8 +13,8 @@ import Alamofire
 class Track {
     private static let manager = CLLocationManager()
     private var radius = CLCircularRegion()
+  
     
-   
     static func locationManager() {
         manager.requestAlwaysAuthorization()
         manager.requestWhenInUseAuthorization()

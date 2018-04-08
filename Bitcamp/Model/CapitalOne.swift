@@ -24,7 +24,7 @@ class CO {
                     let jsonArray = (response.result.value as! NSArray)
                     for merchant in jsonArray {
                         if ((merchant as! NSDictionary).count == 6) {
-                         
+                            
                             let json = JSON(merchant)
                             let longitude = json["geocode"]["lng"].double ??  0
                             let latitude = json["geocode"]["lat"].double ?? 0
@@ -82,3 +82,4 @@ class CO {
         }
     }
 }
+

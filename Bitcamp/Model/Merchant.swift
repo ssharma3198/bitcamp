@@ -1,3 +1,4 @@
+
 //
 //  Merchant.swift
 //  Bitcamp
@@ -25,6 +26,8 @@ struct Merchant {
         address_streetName = s
         address_streetNumber = num
         geocode_coordinate = loc
-        Merchant.allMerchants[i] = self 
+        Merchant.allMerchants[i] = self
     }
 }
+
+

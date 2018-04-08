@@ -43,6 +43,5 @@ class User {
         }
         return locationId
     }
-
+    
 }
-

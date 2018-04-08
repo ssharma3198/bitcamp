@@ -1,3 +1,4 @@
+
 //
 //  Purchase.swift
 //  Bitcamp
@@ -21,3 +22,4 @@ struct Purchase {
         payerId = p
     }
 }
+

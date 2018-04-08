@@ -1,3 +1,4 @@
+
 //
 //  trackingInformation.swift
 //  Bitcamp
@@ -73,3 +74,4 @@ class Track {
         }
     }
 }
+

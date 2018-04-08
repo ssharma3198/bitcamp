@@ -23,6 +23,7 @@ class ViewController: UIViewController {
             performSegue(withIdentifier: "config_to_stat", sender: self)
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -14,7 +14,8 @@ class CO {
     private static let merchantLink: String = "http://api.reimaginebanking.com/merchants?key=6a3c792ae7f52418ee4c661f3b9d77d2"
     private static let purchasesLink: String = ""
     private static let accounts = ["5ac829bf322fa06b67793844", "5ac829bf322fa06b67793845", "5ac829bf322fa06b67793846"]
-    private static let users = ["5ac829bd322fa06b67793841", "5ac829be322fa06b67793842", "5ac829bf322fa06b67793843"]
+    private static let users = ["5ac829bd322fa06b67793841"]
+    //, "5ac829be322fa06b67793842", "5ac829bf322fa06b67793843"]
     
     static func getMerchants() {
         Alamofire.request(merchantLink)
@@ -51,6 +52,7 @@ class CO {
         for account in accounts {
             let url = "http://api.reimaginebanking.com/accounts/\(account)/purchases?key=6a3c792ae7f52418ee4c661f3b9d77d2"
             var userPurchases = Dictionary<String, [Int]>()
+            var allPurchases = [Purchase]()
             Alamofire.request(url)
                 .responseJSON { response in
                     switch response.result{
@@ -70,10 +72,12 @@ class CO {
                             
                             let _amount = json["amount"].int
                             let _payer_id = json["payer_id"].string
-                            let _ = Purchase(merchant_id: _merchant_id!, payerId: _payer_id!, amount: _amount!)
+                            let p = Purchase(merchant_id: _merchant_id!, payerId: _payer_id!, amount: _amount!)
                             
+                            allPurchases.append(p)
                             userPurchases[_merchant_id!] = [numVisits+1, (cost+_amount!)]
                         }
+                        User(Name: "Shruti", locations: userPurchases, Purchases: allPurchases)
                         
                     case .failure:
                         print (response.result)

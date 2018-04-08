@@ -10,18 +10,12 @@ import UIKit
 
 class StatsController: UIViewController {
     
-    @IBOutlet weak var welcome_outlet: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        welcome_outlet.text = name
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

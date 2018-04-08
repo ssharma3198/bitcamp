@@ -16,11 +16,9 @@ class Track {
     private static let manager = CLLocationManager()
     private var radius = CLCircularRegion()
     private static var timer: Timer? = Timer()
-    private static var user: User!
     private static var notified = KeychainWrapper.standard.bool(forKey: "notified") ?? false
     
-    static func startTracking(User u: User) {
-        user = u
+    static func startTracking() {
         manager.requestAlwaysAuthorization()
         manager.requestWhenInUseAuthorization()
         KeychainWrapper.standard.set(false, forKey: "notified")
@@ -41,7 +39,7 @@ class Track {
     
     @objc static  func notify() {
         let loc = manager.location?.coordinate
-        let area = user.area
+        let area = User.area!
         if (area.contains(loc!) && !notified) {
             let user = "AC97d1eb0c84e630cfd2c550bf6b4797ae"
             let password = "800d5839001e6c5e68e8505a020ff9ce"

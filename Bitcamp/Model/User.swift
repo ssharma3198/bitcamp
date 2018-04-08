@@ -11,19 +11,20 @@ import CoreLocation
 
 class User {
     var name: String!
-    var locations: Dictionary<String, Int>! // id -> number of visits
+    var locations: Dictionary<String, [Int]>! // id -> number of visits
     var mostFrequentMerchant: Merchant!
     var area: CLCircularRegion
     
-    init(Name n: String!, locations loc: Dictionary<String, Int>!) {
+    init(Name n: String!, locations loc: Dictionary<String, [Int]>!) {
         name = n
         locations = loc
-        var maxVisits = 0
+        var maxSpent = 0
         var mostFrequentLoc = ""
-        for (key, value) in locations {
-            if value > maxVisits {
+        for (key, values) in locations {
+            let amountSpent = values[1]
+            if amountSpent > maxSpent {
                 mostFrequentLoc = key
-                maxVisits = value
+                maxSpent = amountSpent
             }
         }
         mostFrequentMerchant = Merchant.allMerchants[mostFrequentLoc]
@@ -31,12 +32,13 @@ class User {
     }
     
     func frequentLocations() -> String {
-        var maxVisits = 0
+        var maxSpent = 0
         var locationId = ""
-        for (key, value) in locations {
-            if value > maxVisits {
+        for (key, values) in locations {
+            let amountSpent = values[1]
+            if amountSpent > maxSpent {
                 locationId = key
-                maxVisits = value
+                maxSpent = amountSpent
             }
         }
         return locationId

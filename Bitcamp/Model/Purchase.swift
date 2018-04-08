@@ -1,3 +1,4 @@
+
 //
 //  Purchase.swift
 //  Bitcamp
@@ -10,16 +11,15 @@ import Foundation
 
 struct Purchase {
     var merchant_id: String
+    var payerId: String
     let medium = "balance"
-    var purchase_date: String
     var amount: Int
     var status = "pending"
-    var description: String
     
-    init(merchant_id i: String, purchase_date date: String, amount a: Int, description desc: String) {
+    init(merchant_id i: String, payerId p: String, amount a: Int) {
         merchant_id = i
-        purchase_date = date
         amount = a
-        description = desc
+        payerId = p
     }
 }
+

@@ -22,6 +22,7 @@
 		9D48C02820791A74005F3BE4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D48C02720791A74005F3BE4 /* Default-568h@2x.png */; };
 		9D48C02B20791E79005F3BE4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48C02A20791E79005F3BE4 /* User.swift */; };
 		9D48C02D20792373005F3BE4 /* Merchant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48C02C20792373005F3BE4 /* Merchant.swift */; };
+		9D48C06D20796810005F3BE4 /* CapitalOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48C06C20796810005F3BE4 /* CapitalOne.swift */; };
 		9EF5F7D53F66249046D9BD8B /* Pods_Bitcamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501084368D645E3BFAB46E18 /* Pods_Bitcamp.framework */; };
 		BD74FB82FF6F5AB44CFCDA46 /* Pods_BitcampTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCE2B2BCD9A52BDCDCB1C5E /* Pods_BitcampTests.framework */; };
 		C256C4E688B384143A0C765B /* Pods_BitcampUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A06BFB412E912F06AAB162 /* Pods_BitcampUITests.framework */; };
@@ -87,6 +88,7 @@
 		9D48C02720791A74005F3BE4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9D48C02A20791E79005F3BE4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9D48C02C20792373005F3BE4 /* Merchant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merchant.swift; sourceTree = "<group>"; };
+		9D48C06C20796810005F3BE4 /* CapitalOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalOne.swift; sourceTree = "<group>"; };
 		9DFC2C49657F2A84D344F7E3 /* Pods-Bitcamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitcamp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bitcamp/Pods-Bitcamp.release.xcconfig"; sourceTree = "<group>"; };
 		DCCE2B2BCD9A52BDCDCB1C5E /* Pods_BitcampTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcampTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC1015F7207967D0003BAE1C /* angry_bud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = angry_bud.png; sourceTree = "<group>"; };
@@ -499,6 +501,7 @@
 			files = (
 				9D48BFEB2078A842005F3BE4 /* ViewController.swift in Sources */,
 				9D48C01E2078AC6E005F3BE4 /* trackingInformation.swift in Sources */,
+				9D48C06D20796810005F3BE4 /* CapitalOne.swift in Sources */,
 				9D48BFF12078A842005F3BE4 /* Bitcamp.xcdatamodeld in Sources */,
 				9D48C02B20791E79005F3BE4 /* User.swift in Sources */,
 				9D48BFE92078A842005F3BE4 /* AppDelegate.swift in Sources */,

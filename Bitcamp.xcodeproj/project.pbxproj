@@ -18,7 +18,6 @@
 		9D48C01E2078AC6E005F3BE4 /* trackingInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48C01D2078AC6E005F3BE4 /* trackingInformation.swift */; };
 		9D48C01F20790F2F005F3BE4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D48C02120790F2F005F3BE4 /* Alamofire.framework */; };
 		9D48C02020790F2F005F3BE4 /* SwiftKeychainWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D48C02220790F2F005F3BE4 /* SwiftKeychainWrapper.framework */; };
-		9D48C026207919AA005F3BE4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D48C025207919AA005F3BE4 /* Info.plist */; };
 		9D48C02820791A74005F3BE4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D48C02720791A74005F3BE4 /* Default-568h@2x.png */; };
 		9D48C02B20791E79005F3BE4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48C02A20791E79005F3BE4 /* User.swift */; };
 		9D48C02D20792373005F3BE4 /* Merchant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48C02C20792373005F3BE4 /* Merchant.swift */; };
@@ -28,6 +27,7 @@
 		C256C4E688B384143A0C765B /* Pods_BitcampUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A06BFB412E912F06AAB162 /* Pods_BitcampUITests.framework */; };
 		EC1015F8207967D1003BAE1C /* angry_bud.png in Resources */ = {isa = PBXBuildFile; fileRef = EC1015F7207967D0003BAE1C /* angry_bud.png */; };
 		EC1015FA207967D9003BAE1C /* happy_bud.png in Resources */ = {isa = PBXBuildFile; fileRef = EC1015F9207967D9003BAE1C /* happy_bud.png */; };
+		ECCEB53B2079D242005F76FD /* StatsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCEB53A2079D242005F76FD /* StatsController.swift */; };
 		FF42DD8C207977B200928378 /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42DD8B207977B200928378 /* Purchase.swift */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +93,7 @@
 		DCCE2B2BCD9A52BDCDCB1C5E /* Pods_BitcampTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcampTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC1015F7207967D0003BAE1C /* angry_bud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = angry_bud.png; sourceTree = "<group>"; };
 		EC1015F9207967D9003BAE1C /* happy_bud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy_bud.png; sourceTree = "<group>"; };
+		ECCEB53A2079D242005F76FD /* StatsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsController.swift; sourceTree = "<group>"; };
 		FF42DD8B207977B200928378 /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -228,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				9D48BFEA2078A842005F3BE4 /* ViewController.swift */,
+				ECCEB53A2079D242005F76FD /* StatsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -331,7 +333,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Shruti Sharma";
 				TargetAttributes = {
 					9D48BFE42078A842005F3BE4 = {
@@ -381,7 +383,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC1015F8207967D1003BAE1C /* angry_bud.png in Resources */,
-				9D48C026207919AA005F3BE4 /* Info.plist in Resources */,
 				9D48BFF62078A842005F3BE4 /* LaunchScreen.storyboard in Resources */,
 				9D48BFF32078A842005F3BE4 /* Assets.xcassets in Resources */,
 				EC1015FA207967D9003BAE1C /* happy_bud.png in Resources */,
@@ -515,6 +516,7 @@
 				9D48C0702079B0F0005F3BE4 /* CapitalOne.swift in Sources */,
 				9D48BFE92078A842005F3BE4 /* AppDelegate.swift in Sources */,
 				9D48C02D20792373005F3BE4 /* Merchant.swift in Sources */,
+				ECCEB53B2079D242005F76FD /* StatsController.swift in Sources */,
 				FF42DD8C207977B200928378 /* Purchase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,6 +586,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -591,6 +594,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -641,6 +645,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -648,6 +653,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
